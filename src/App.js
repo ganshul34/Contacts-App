@@ -11,6 +11,10 @@ class App extends Component {
       contacts: []
     };
   }
+  componentDidMount(){
+    console.log('Mounted');
+    
+  }
   addContact = contact => {
     const { name, phone } = contact;
     const newContacts = [...this.state.contacts];
